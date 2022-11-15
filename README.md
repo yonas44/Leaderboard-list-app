@@ -9,7 +9,6 @@ A leaderboard-list project built with Webpack and ES6 modules
 
 - Major languages : HTML, CSS & JavaScript
 
-![image](./src/images/preview.png)
 
 ## Getting Started
 
