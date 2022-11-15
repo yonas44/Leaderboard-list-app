@@ -12,7 +12,7 @@
       <section class="dashboard">
         <div class="list-title">
           <h3 class="fst-italic">Recent scores</h3>
-          <button>Refresh</button>
+          <button id="refresh">Refresh</button>
         </div>
         <div class="lists">
           <table class="col-6 table table-striped bg-primary my-0">
@@ -29,9 +29,16 @@
       </section>
       <section class="form">
         <h3>Add your score</h3>
-        <form>
-          <input type="text" required placeholder="Your name" />
-          <input type="number" required placeholder="Your score" />
+        <form class="input">
+          <input id="name" type="text" required placeholder="Your name" />
+          <input
+            id="score"
+            type="number"
+            min="1"
+            max="100"
+            required
+            placeholder="Your score"
+          />
           <input type="submit" required value="submit" />
         </form>
       </section>
