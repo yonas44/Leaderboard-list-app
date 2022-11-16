@@ -18,10 +18,10 @@ In this project I built a simple HTML list of leaderboard app using webpack and 
 
 ### Setup
 
-Run git clone git@github.com:yonas44/Leaderboard-list-app.git
-Run cd Leaderboard-list-app
-Run npm install
-Run npm start
+- Run git clone git@github.com:yonas44/Leaderboard-list-app.git
+- Run cd Leaderboard-list-app
+- Run npm install
+- Run npm start
 
 ## Authors
 
