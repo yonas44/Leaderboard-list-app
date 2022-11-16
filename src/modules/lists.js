@@ -2,7 +2,7 @@
 class Entry {
   constructor(name, score) {
     name = name.charAt(0).toUpperCase() + name.slice(1);
-    this.name = name;
+    this.user = name;
     this.score = score;
   }
 }
@@ -10,11 +10,6 @@ class Entry {
 class Lists {
   constructor() {
     this.store = [];
-  }
-
-  appendList(entry) {
-    this.store.push(entry);
-    return this.store;
   }
 }
 
