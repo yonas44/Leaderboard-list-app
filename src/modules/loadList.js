@@ -6,6 +6,10 @@ const loadLists = async (lists) => {
       return lists;
     });
 
+  const listSection = document.querySelector('.lists');
+  listSection.classList.add('on');
+  const message = document.querySelector('.message');
+  message.classList.remove('on');
   const scoreHolder = document.querySelector('.score-holder');
   while (scoreHolder.hasChildNodes()) {
     scoreHolder.removeChild(scoreHolder.firstChild);
