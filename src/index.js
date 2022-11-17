@@ -14,11 +14,15 @@ form.addEventListener('submit', (event) => {
   const name = document.querySelector('#name').value;
   const score = document.querySelector('#score').value;
   const entry = new Entry(name, score);
-  pushTask(entry);
-  setTimeout(() => {
-    loadLists(list.store);
-  }, 1000);
-  form.reset();
+  if (name.trim() !== '') {
+    pushTask(entry);
+    setTimeout(() => {
+      loadLists(list.store);
+    }, 1000);
+    form.reset();
+  } else {
+    alert('Please enter a valid Name, thank you!');
+  }
 });
 
 // Event listener for the refresh button

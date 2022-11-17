@@ -1,5 +1,5 @@
 const pushTask = async (entry) => {
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/654ILmSsTWImQipsiZEo/scores',
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Ow87Fue6mXhbZTDEmKae/scores',
     {
       method: 'POST',
       headers: {

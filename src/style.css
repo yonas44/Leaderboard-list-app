@@ -97,7 +97,7 @@ h1 {
 
 .animate {
   scale: 1;
-  animation: out 1s 1s forwards;
+  animation: out 1s 0.5s forwards;
 }
 
 .list-title {
@@ -110,11 +110,21 @@ h1 {
 }
 
 .list-title button {
+  border: none;
   padding: 0 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.list-title button:hover {
+  background-color: red;
+  color: white;
 }
 
 .lists {
   display: none;
+  overflow: auto;
+  max-height: 300px;
 }
 
 .on {
@@ -177,14 +187,25 @@ form {
 }
 
 input {
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  outline: none;
   height: 30px;
 }
 
 input[type='submit'] {
   padding: 10px;
+  border: none;
   height: initial;
   width: fit-content;
   margin-left: auto;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  color: white;
+  font-weight: 700;
 }
 
 .bg {
