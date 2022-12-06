@@ -44,10 +44,6 @@ body {
   backdrop-filter: blur(8px);
 }
 
-.home:hover {
-  box-shadow: 0 2px 3px black;
-}
-
 .home h2 {
   font-size: 52px;
   font-style: italic;

@@ -2,7 +2,7 @@ const loadLists = async (lists) => {
   await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Ow87Fue6mXhbZTDEmKae/scores')
     .then((res) => res.json())
     .then((data) => {
-      lists = data.result;
+      lists = data.result.sort((a, b) => b.score - a.score);
       return lists;
     });
 
