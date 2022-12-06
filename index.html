@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard-list</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="home-bg">
+      <div class="home">
+        <h2>Tracker app</h2>
+        <button id="first-btn">Press me!</button>
+      </div>
+    </div>
+    <h1>Leaderboard</h1>
+    <main class="container">
+      <section class="dashboard">
+        <div class="list-title">
+          <h3>Recent scores</h3>
+          <button id="refresh">Refresh</button>
+        </div>
+        <div class="lists">
+          <table>
+            <tbody class="score-holder"></tbody>
+          </table>
+        </div>
+        <div class="message">
+          <p>Hit <span>Refresh</span> to get the previous scores </p>
+        </div>
+      </section>
+      <section class="form">
+        <h3>Add your score</h3>
+        <form class="input">
+          <input id="name" type="text" required placeholder="Your name" />
+          <input
+            id="score"
+            type="number"
+            min="1"
+            max="100"
+            required
+            placeholder="Your score"
+          />
+          <input id="submit" type="submit" required value="submit" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      Copyright &copy 2022 All right reserved | Project by Yonas Tesfu</span>
+    </footer>
+  </body>
+</html>
