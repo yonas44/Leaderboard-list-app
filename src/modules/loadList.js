@@ -1,5 +1,5 @@
 const loadLists = async (lists) => {
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Ow87Fue6mXhbZTDEmKae/scores')
+  await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${process.env.API_KEY}/scores`)
     .then((res) => res.json())
     .then((data) => {
       lists = data.result.sort((a, b) => b.score - a.score);

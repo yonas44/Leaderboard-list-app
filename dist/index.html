@@ -7,17 +7,26 @@
     <title>Leaderboard-list</title>
   <script defer src="main.js"></script></head>
   <body>
+    <div class="home-bg">
+      <div class="home">
+        <h2>Tracker app</h2>
+        <button id="first-btn">Press me!</button>
+      </div>
+    </div>
     <h1>Leaderboard</h1>
     <main class="container">
       <section class="dashboard">
         <div class="list-title">
-          <h3 class="fst-italic">Recent scores</h3>
+          <h3>Recent scores</h3>
           <button id="refresh">Refresh</button>
         </div>
         <div class="lists">
-          <table class="col-6 table table-striped bg-primary my-0">
+          <table>
             <tbody class="score-holder"></tbody>
           </table>
+        </div>
+        <div class="message">
+          <p>Hit <span>Refresh</span> to get the previous scores </p>
         </div>
       </section>
       <section class="form">
@@ -32,9 +41,12 @@
             required
             placeholder="Your score"
           />
-          <input type="submit" required value="submit" />
+          <input id="submit" type="submit" required value="submit" />
         </form>
       </section>
     </main>
+    <footer>
+      Copyright &copy 2022 All right reserved | Project by Yonas Tesfu</span>
+    </footer>
   </body>
 </html>
